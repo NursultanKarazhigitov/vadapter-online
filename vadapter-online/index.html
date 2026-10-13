@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice Adapter — an AI agent that fills your Google Sheets from chat, voice and receipts</title>
+  <meta name="description" content="Text it, say it or snap a receipt. Voice Adapter turns your message into a row in your Google Sheet, and saves it only after you approve.">
+  <link rel="canonical" href="https://vadapter.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vadapter.online/">
+  <meta property="og:title" content="Voice Adapter — your Google Sheet, filled from chat">
+  <meta property="og:description" content="Text it, say it or snap a receipt. It lands in your Google Sheet after you approve.">
+  <meta property="og:image" content="https://vadapter.online/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brand-mark" src="/assets/favicon.svg" alt="">Voice Adapter</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="button small quiet" href="https://app.vadapter.online">Sign in</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>Text it. Say it. Snap it. It’s in your sheet.</h1>
+        <div>
+        <p class="lead">Voice Adapter is an AI agent that turns a chat message, a voice note or a receipt photo into a row in your Google Sheet. It shows you the row first and saves it only when you say yes.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:support@vadapter.online?subject=Early%20access">Get early access</a>
+          <a class="button quiet" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Free during early access. Works with Google Sheets and Telegram.</p>
+        </div>
+      </div>
+
+      <div class="demo" id="demo" aria-label="Example: a chat message becomes a row in Google Sheets">
+        <div class="chat" aria-hidden="true">
+          <div class="chat-head"><span class="avatar">V</span><div><b>Expenses agent</b><small>bot</small></div></div>
+          <div class="bubble me" data-step="1">coffee 4.50 amex</div>
+          <div class="bubble bot" data-step="2">Expenses:
+            <dl><dt>Amount</dt><dd>4.50</dd><dt>Account</dt><dd>Amex</dd><dt>Category</dt><dd>Coffee</dd></dl>
+            Save it? Reply “yes”.
+          </div>
+          <div class="bubble me" data-step="3">yes</div>
+          <div class="bubble bot" data-step="4">✅ Added to Google Sheets, row 6.</div>
+        </div>
+        <div class="sheet">
+          <div class="sheet-bar"><b>Team budget 2026</b><div class="sheet-tabs"><span class="on">Expenses</span><span>Sales</span></div></div>
+          <table>
+            <thead><tr><th class="col-num"></th><th>A</th><th>B</th><th>C</th><th>D</th><th class="hide-sm">E</th></tr></thead>
+            <tbody>
+              <tr class="labels"><td class="col-num">1</td><td>Date</td><td>Amount</td><td>Account</td><td>Category</td><td class="hide-sm">Note</td></tr>
+              <tr><td class="col-num">2</td><td>Oct 9</td><td class="num">62.00</td><td>Chase</td><td>Software</td><td class="hide-sm">Figma</td></tr>
+              <tr><td class="col-num">3</td><td>Oct 10</td><td class="num">18.50</td><td>Amex</td><td>Lunch</td><td class="hide-sm">Client</td></tr>
+              <tr><td class="col-num">4</td><td>Oct 11</td><td class="num">240.00</td><td>Chase</td><td>Travel</td><td class="hide-sm">Train</td></tr>
+              <tr><td class="col-num">5</td><td>Oct 12</td><td class="num">9.99</td><td>Revolut</td><td>Software</td><td class="hide-sm"></td></tr>
+              <tr class="new" data-row><td class="col-num">6</td><td>Oct 13</td><td class="num">4.50</td><td>Amex</td><td>Coffee</td><td class="hide-sm"></td></tr>
+              <tr><td class="col-num">7</td><td></td><td></td><td></td><td></td><td class="hide-sm"></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="tinted">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Set it up once. Then just message it.</h2>
+        <p>You describe your sheet one time. After that, adding a row is a chat message.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Connect Google and pick a sheet</h3><p>Choose the one spreadsheet the agent may use. It doesn’t look at the rest of your Drive.</p></li>
+        <li><h3>Describe your columns</h3><p>Amount, date, category, client: whatever you track. Dropdown lists from your sheet are picked up automatically.</p></li>
+        <li><h3>Message the bot</h3><p>Write, talk or send a photo in Telegram. Check the card, reply “yes”, and the row is saved.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Send it any way you like</h2>
+        <p>The agent reads what you send and fills in your columns. You always see the row before it’s written.</p>
+      </div>
+      <table class="ledger">
+        <thead><tr><th>You send</th><th>For example</th><th>It adds to your sheet</th></tr></thead>
+        <tbody>
+          <tr><td>A text</td><td class="says">“sold 3 units to Acme, 1,200, invoice 1043”</td><td><div class="row"><span>Sales</span><span>Acme</span><span>3</span><span>1,200.00</span><span>#1043</span></div></td></tr>
+          <tr><td>A voice note</td><td class="says">“Uber to the airport, forty two dollars, company card”</td><td><div class="row"><span>Expenses</span><span>Travel</span><span>42.00</span><span>Company card</span></div></td></tr>
+          <tr><td>A receipt photo</td><td class="says">A photo of a grocery receipt</td><td><div class="row"><span>Expenses</span><span>Groceries</span><span>63.18</span><span>Store name and date</span></div></td></tr>
+          <tr><td>A payment screenshot</td><td class="says">A bank app transfer confirmation</td><td><div class="row"><span>Payments</span><span>Recipient</span><span>Amount</span><span>Date</span></div></td></tr>
+          <tr><td>A PDF statement</td><td class="says">A bank statement, up to 5 pages</td><td><div class="row"><span>One row per transaction</span></div></td></tr>
+          <tr><td>Several at once</td><td class="says">“lunch 18.50 amex, parking 6 cash”</td><td><div class="row"><span>Two rows, both on one card</span></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tinted">
+    <div class="wrap split">
+      <div class="section-head">
+        <h2>Fits the sheet you already have</h2>
+        <p>No new app to learn and no template to switch to. The agent works with your columns, your lists and your formulas.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>Knows your dropdowns</strong><span>Says “amex”, writes “Amex Gold”: the exact value from your list. If two items match, it asks.</span></li>
+        <li><strong>Picks the right tab</strong><span>Expenses go to Expenses, sales go to Sales. One message can fill both.</span></li>
+        <li><strong>Writes only where you said</strong><span>Rows go into the columns you configured. Formula columns stay untouched.</span></li>
+        <li><strong>Asks once, not five times</strong><span>Missing details come back as one short question you can answer in one message.</span></li>
+        <li><strong>Speaks your language</strong><span>Write in English, Russian, Kazakh and other languages. It replies the same way.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="consultants">
+        <div>
+          <h2>Set it up for your clients</h2>
+          <p>Bookkeepers, virtual assistants and automation consultants build an agent for each client in minutes. The client gets a private bot link and never touches the settings.</p>
+          <a class="button" href="mailto:support@vadapter.online?subject=Partner%20access">Talk to us about partner access</a>
+        </div>
+        <ul>
+          <li>One agent per client, each with its own sheet</li>
+          <li>A private Telegram invite link per client</li>
+          <li>Test every agent in the built-in chat before you hand it over</li>
+          <li>Your client confirms every row, so nothing is written by surprise</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="security" class="tinted">
+    <div class="wrap split">
+      <div class="section-head">
+        <h2>Your data stays yours</h2>
+        <p>We ask Google for the smallest access that works, and you decide every write. Details are in our <a href="/privacy/">Privacy Policy</a>.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>One spreadsheet, not your Drive</strong><span>The agent works only with the sheet you picked and never opens your other files.</span></li>
+        <li><strong>Nothing is saved without your “yes”</strong><span>Every row is shown on a card first. You can change or cancel it.</span></li>
+        <li><strong>Files are not kept</strong><span>Photos, PDFs and voice notes are read and then discarded.</span></li>
+        <li><strong>Never used to train AI</strong><span>Google data is not sold, not used for ads and not used to train models. Access tokens are stored encrypted.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details><summary>Do I need to know how to code?</summary><p>No. You pick a sheet, name your columns and share a bot link. That’s the whole setup.</p></details>
+        <details><summary>Can it see my other Google files?</summary><p>No. You choose one spreadsheet and the agent works with that file only. You can revoke access at any time in your Google account.</p></details>
+        <details><summary>What if it gets something wrong?</summary><p>Nothing is written until you confirm. Reply with a correction, like “category is travel”, and the card updates. Reply “cancel” to drop it.</p></details>
+        <details><summary>Can I use several tabs or sheets?</summary><p>Yes. One agent can work with up to 10 tabs of a spreadsheet and chooses the right tab for each record. You can create separate agents for separate spreadsheets.</p></details>
+        <details><summary>Do I need Telegram?</summary><p>Today the agent works in Telegram, and account owners can also test it in a web chat on the platform. More messengers are on the way.</p></details>
+        <details><summary>How much does it cost?</summary><p>It’s free during early access. We’ll announce pricing before it applies to you.</p></details>
+        <details><summary>Where is my data stored?</summary><p>Your records live in your own Google Sheet. We keep your account settings and encrypted access tokens on our servers. See the <a href="/privacy/">Privacy Policy</a> for everything we store and why.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing tinted">
+    <div class="wrap">
+      <h2>Stop retyping receipts into spreadsheets</h2>
+      <p>Join early access and set up your first agent today. It takes about ten minutes.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:support@vadapter.online?subject=Early%20access">Get early access</a>
+        <a class="button quiet" href="https://app.vadapter.online">Sign in</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Voice Adapter</span>
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="mailto:support@vadapter.online">support@vadapter.online</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // One short play of the hero: message, card, "yes", then the row lands in the sheet.
+  (function () {
+    var demo = document.getElementById('demo');
+    if (!demo || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var steps = demo.querySelectorAll('[data-step]');
+    var row = demo.querySelector('[data-row]');
+    demo.classList.add('playing');
+    steps.forEach(function (step) { step.classList.add('hidden'); });
+    row.classList.add('pending');
+    var times = [500, 1400, 3300, 4100];
+    steps.forEach(function (step, i) {
+      setTimeout(function () { step.classList.remove('hidden'); }, times[i]);
+    });
+    setTimeout(function () { row.classList.remove('pending'); row.classList.add('landed'); }, 4300);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.vadapter.online" }], "destination": "https://vadapter.online/:path*", "permanent": true }
+  ]
+}
