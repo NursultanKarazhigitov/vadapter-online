@@ -1,6 +1,6 @@
 # vadapter.online
 
-Static marketing site for Voice Adapter. Plain HTML + CSS, no build step.
+Static marketing site for Vadapter AI. Plain HTML + CSS, no build step.
 
 - `index.html` — home page
 - `privacy/` — Privacy Policy (required for Google OAuth verification)
