@@ -42,7 +42,6 @@ p { margin: 0; }
 .site-head { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--grid); }
 .site-head .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
-.brand-mark { width: 26px; height: 26px; }
 .nav { display: flex; gap: 22px; margin-left: auto; }
 .nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
 .nav a:hover { color: var(--ink); }
