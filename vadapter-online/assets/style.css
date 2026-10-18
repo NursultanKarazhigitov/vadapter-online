@@ -67,6 +67,11 @@ p { margin: 0; }
 .hero .lead { margin-top: 22px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .hero-note { margin-top: 18px; font-size: .92rem; color: var(--muted); }
+.price-teaser { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-top: 22px; padding: 14px 16px; border: 1px solid var(--grid); border-radius: 14px; background: #fff; }
+.price-teaser strong { font-family: var(--display); font-size: 1.15rem; }
+.price-teaser span { color: var(--muted); }
+.head-link { color: var(--muted); text-decoration: none; font-size: .95rem; }
+.head-link:hover { color: var(--ink); }
 
 /* The demo: a chat on top of the sheet it fills */
 .demo { display: grid; grid-template-columns: 340px 1fr; gap: 28px; align-items: center; padding: 28px; border-radius: 28px; background: var(--head); border: 1px solid var(--grid); }
@@ -177,6 +182,16 @@ section.tinted { background: var(--head); border-block: 1px solid var(--grid); }
 .legal th, .legal td { border: 1px solid var(--grid); padding: 10px 12px; text-align: left; vertical-align: top; }
 .legal th { background: var(--head); }
 
+.plan { margin-top: 36px; padding: 28px; border: 1px solid var(--grid); border-radius: var(--radius-l); background: #fff; }
+.plan h2 { font-size: 1.8rem; }
+.plan-price { margin-top: 12px; font-family: var(--display); font-size: 1.35rem; font-weight: 600; }
+.plan-price span, .plan-year, .plan-note { color: var(--muted); font-family: var(--body); font-weight: 400; font-size: 1rem; }
+.plan-year { margin-top: 6px; }
+.plan ul { margin: 22px 0 0; padding-left: 1.2em; }
+.plan li { margin-top: 8px; }
+.plan .button { margin-top: 28px; }
+.plan-note { margin-top: 18px; font-size: .95rem; }
+.plan-links { margin-top: 28px; color: var(--muted); }
 .notfound { padding: 120px 0; text-align: center; }
 .notfound p { margin: 16px auto 28px; color: var(--muted); }
 
@@ -188,7 +203,7 @@ section.tinted { background: var(--head); border-block: 1px solid var(--grid); }
   .steps { grid-template-columns: 1fr; }
   .consultants { padding: 36px 24px; }
   .nav { display: none; }
-  .site-head .button { margin-left: auto; }
+  .site-head .head-link { margin-left: auto; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
