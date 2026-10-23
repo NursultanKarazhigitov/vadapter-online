@@ -29,17 +29,25 @@
 <main>
 <article class="legal"><div class="wrap">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: October 18, 2026</p>
+<p class="updated">Last updated: October 21, 2026</p>
 
 <p>Vadapter AI (“we”, “us”) provides an AI agent that turns chat messages, voice notes, photos and PDF files into rows in a Google Sheet chosen by the user. This policy explains what data we process, why, and the choices you have. Questions: <a href="mailto:support@vadapter.online">support@vadapter.online</a>.</p>
 
 <h2>Who we are</h2>
-<p>The data controller is We are against poverty, the company that operates Vadapter AI, registered in Kazakhstan, 17 Sagynbay Nurgaliyev Street, Atyrau. Contact: <a href="mailto:support@vadapter.online">support@vadapter.online</a>.</p>
+<p>The data controller is We are against poverty LLP (BIN 260540006316), the company that operates Vadapter AI, registered in the Republic of Kazakhstan, Building 17, Sagynbay Nurgaliyev Street, Zheruyik Microdistrict, Atyrau 060000, Atyrau Region, Kazakhstan. Contact: <a href="mailto:support@vadapter.online">support@vadapter.online</a>.</p>
 
 <h2>Who this applies to</h2>
 <ul>
 <li><strong>Account owners</strong> — people who sign in at app.vadapter.online and set up agents (for themselves or for clients).</li>
-<li><strong>End users</strong> — people who send messages to an agent in Telegram or in the web chat.</li>
+<li><strong>End users</strong> — people who send messages to an agent in Telegram or in the web chat, including people who use an agent made by someone else.</li>
+</ul>
+
+<h2>Agents made by other people</h2>
+<p>An account owner (an “agent author”) can share an agent through a link. When you start such an agent, you sign in to Vadapter AI with your own account, connect your own Google account and use your own spreadsheet — a copy of the author’s template in your Google Drive, or a spreadsheet you already have.</p>
+<ul>
+<li><strong>What the agent author sees:</strong> your name and email, whether your spreadsheet is connected, the date of your last activity, and aggregate counts (for example, how many records were saved).</li>
+<li><strong>What the agent author never sees:</strong> your spreadsheet, the rows written to it, your messages, voice notes, photos or files, or your Google access.</li>
+<li>The agent author can block your access to their agent. You can disconnect an agent or delete your data at any time on the “Connected agents” page or by sending <code>/stop</code> to the bot.</li>
 </ul>
 
 <h2>Data we process</h2>
@@ -50,14 +58,16 @@
 <tr><td>Agent settings (spreadsheet ID, tab names, column names, dropdown values, instructions)</td><td>So the agent knows where and how to write.</td></tr>
 <tr><td>Messages sent to the agent, and text recognized from voice notes, photos and PDFs</td><td>To prepare the record shown on the confirmation card and to keep a short chat context.</td></tr>
 <tr><td>Telegram chat ID</td><td>To deliver replies to the right chat.</td></tr>
+<tr><td>If you use an agent made by someone else: your name and email, connection status and last activity date</td><td>Shown to that agent’s author so they know who uses their agent and can manage access. Your spreadsheet and messages are not shared with them.</td></tr>
 <tr><td>Technical logs (timestamps, errors)</td><td>To keep the service reliable and secure.</td></tr>
 </table>
 <p>Photos, PDF files and voice recordings are processed in memory and are <strong>not stored</strong>. The chat history keeps only a label such as “[photo]”. Draft records are stored encrypted and expire automatically.</p>
 
 <h2>How we use Google user data</h2>
-<p>When you connect Google, we request access to Google Sheets and to the files you pick yourself (<code>drive.file</code>). We use it only to:</p>
+<p>When you connect Google, we request access only to the spreadsheets you pick yourself in Google’s file picker (<code>drive.file</code>). We use it only to:</p>
 <ul>
 <li>read the tabs, header row and dropdown lists of the spreadsheet you selected;</li>
+<li>when you choose to start from an agent’s template, make a copy of that template in your Google Drive and clear the author’s sample records in the copy;</li>
 <li>write the rows that you (or your end user) confirmed on the review card.</li>
 </ul>
 <p>We do not read, list or modify any other files in your Google Drive.</p>
@@ -93,6 +103,7 @@
 <p>Depending on where you live (for example under the GDPR, UK GDPR or California law), you may have the right to access, correct, delete or export your personal data, and to object to or restrict certain processing. To make a request, email <a href="mailto:support@vadapter.online">support@vadapter.online</a>. We will not discriminate against you for using these rights. You can also:</p>
 <ul>
 <li>disconnect Google in the platform settings;</li>
+<li>disconnect an agent made by someone else, or delete all your data, on the “Connected agents” page, or send <code>/stop</code> to the bot;</li>
 <li>revoke Vadapter AI’s access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>;</li>
 <li>ask us to delete your account and all associated data.</li>
 </ul>
@@ -116,7 +127,7 @@
 </main>
 <footer class="site-foot">
   <div class="wrap">
-    <span>© 2026 We are against poverty. Vadapter AI is a product of We are against poverty.</span>
+    <span>© 2026 We are against poverty LLP. Vadapter AI is a product of We are against poverty LLP.</span>
     <nav aria-label="Legal">
       <a href="/pricing/">Pricing</a>
       <a href="/terms/">Terms</a>
